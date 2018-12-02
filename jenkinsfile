@@ -8,14 +8,14 @@ pipeline {
                 println "Build log"
             }
         }
-        stage('Test') { 
-            steps {
-                println "Test log"
-            }
-        }
         stage('Deploy') { 
             steps {
                 println "Deploy log"
+            }
+        }
+        stage('Test') { 
+            steps {
+                println "Test log"
             }
         }
     }
