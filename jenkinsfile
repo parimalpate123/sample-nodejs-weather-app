@@ -1,1 +1,21 @@
-
+//Sample Jenkinsfile script
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                println "Build log"
+            }
+        }
+        stage('Test') { 
+            steps {
+                println "Test log"
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                println "Deploy log"
+            }
+        }
+    }
+}
